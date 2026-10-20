@@ -1,8 +1,8 @@
-# Món quà 20/10 tặng mẹ
+# Website 20/10 tặng mẹ
 
-Website một trang giàu cảm xúc, được xây bằng React, TypeScript, Tailwind CSS và Motion.
+Website frontend thuần sử dụng React, Vite, TypeScript và Motion. Dự án không có backend, database, đăng nhập hoặc cấu hình máy chủ.
 
-## Chạy trên máy
+## Chạy localhost
 
 ```bash
 npm install
@@ -13,23 +13,16 @@ Mở `http://127.0.0.1:5173`.
 
 ## Thay nội dung
 
-Chỉnh `config/momContent.ts` để đổi tên người gửi, lời chúc, nội dung thư, chú thích ảnh và đường dẫn nhạc.
+Chỉnh `src/config/momContent.ts` để đổi người gửi, lời chúc, ảnh, chú thích và đường dẫn nhạc.
 
-- Ảnh gia đình: đặt trong `public/images/` và cập nhật `coverImage`, `closingImage` cùng danh sách `gallery` trong cấu hình.
-- Nhạc piano: đặt file tại `public/music/piano-for-mom.mp3`, hoặc đổi trường `music`.
-- Nhạc chỉ phát sau khi người xem nhấn mở phong thư, âm lượng mặc định 25%.
+- Ảnh: đặt trong `public/images/`.
+- Nhạc: đặt tại `public/music/piano-for-mom.mp3` hoặc đổi trường `music`.
+- Website vẫn hoạt động nếu chưa có ảnh hoặc nhạc.
 
-## Kiểm tra và build
+## Build tĩnh
 
 ```bash
 npm run build
 ```
 
-## Deploy lên Vercel
-
-1. Đẩy thư mục dự án lên GitHub.
-2. Trong Vercel, chọn **Add New → Project**, import repository.
-3. Giữ nguyên framework được tự nhận diện và nhấn **Deploy**.
-4. Để dùng tên miền riêng, mở **Project Settings → Domains**, nhập tên miền và làm theo bản ghi DNS Vercel cung cấp.
-
-Trang đã được tối ưu responsive, có `prefers-reduced-motion`, không phụ thuộc backend và vẫn hoạt động nếu ảnh hoặc nhạc chưa được thêm.
+Kết quả được tạo trong thư mục `dist/`.
