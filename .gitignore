@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# TypeScript build cache
+*.tsbuildinfo
+vite.config.d.ts
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Vercel local state
+.vercel/
+
+# Logs and editor files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

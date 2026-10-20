@@ -21,4 +21,18 @@ npm run build
 
 ## Deploy Vercel
 
-Đẩy thư mục lên GitHub, tạo project mới trên Vercel, chọn framework **Vite**, build command `npm run build`, output directory `dist`, rồi Deploy.
+Project đã có sẵn `vercel.json`. Đẩy mã nguồn lên GitHub, sau đó import repository trong Vercel và nhấn **Deploy**. Vercel sẽ tự dùng:
+
+- Node.js `22.x`
+- Install command: `npm ci`
+- Build command: `npm run build`
+- Output directory: `dist`
+
+Hoặc deploy bằng CLI:
+
+```bash
+npx vercel
+npx vercel --prod
+```
+
+Không cần commit thư mục `dist` hoặc `node_modules`.
