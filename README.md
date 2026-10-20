@@ -15,7 +15,7 @@ Mở `http://127.0.0.1:5173`.
 
 Chỉnh `config/momContent.ts` để đổi tên người gửi, lời chúc, nội dung thư, chú thích ảnh và đường dẫn nhạc.
 
-- Ảnh gia đình: đặt trong `public/images/` và cập nhật đường dẫn trong cấu hình.
+- Ảnh gia đình: đặt trong `public/images/` và cập nhật `coverImage`, `closingImage` cùng danh sách `gallery` trong cấu hình.
 - Nhạc piano: đặt file tại `public/music/piano-for-mom.mp3`, hoặc đổi trường `music`.
 - Nhạc chỉ phát sau khi người xem nhấn mở phong thư, âm lượng mặc định 25%.
 

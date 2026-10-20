@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mẹ – Bông hoa đẹp nhất trong cuộc đời con",
-  description: "Một món quà nhỏ từ trái tim dành tặng mẹ nhân ngày 20/10.",
+  title: "20.10 — Dành tặng mẹ",
+  description: "Một món quà nhỏ dành tặng mẹ nhân ngày 20/10.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
