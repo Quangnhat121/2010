@@ -1,0 +1,3 @@
+import { motion } from 'framer-motion'
+import { loveContent } from '../config/loveContent'
+export default function LoveLetter(){return <section className="letter-section section"><div className="letter-flowers"/><motion.article className="love-letter" initial={{opacity:0,y:50,rotate:-1}} whileInView={{opacity:1,y:0,rotate:0}} viewport={{once:true,amount:.2}} transition={{duration:.9}}><span className="letter-date">Ngày 20 tháng 10</span><h2>Gửi cô gái anh thương…</h2>{loveContent.letter.map((p,i)=><motion.p key={p} initial={{opacity:0,y:12}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.1}}>{p}</motion.p>)}<div className="signature">Thương em</div></motion.article></section>}
